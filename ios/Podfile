@@ -3,11 +3,11 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 
 platform :ios, '10.0'
 
-target 'BuzzboardTrump' do
+target 'BuzzboardBiden' do
   config = use_native_modules!
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'BuzzboardTrumpTests' do
+  target 'BuzzboardBidenTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -22,10 +22,10 @@ target 'BuzzboardTrump' do
   end
 end
 
-target 'BuzzboardTrump-tvOS' do
-  # Pods for BuzzboardTrump-tvOS
+target 'BuzzboardBiden-tvOS' do
+  # Pods for BuzzboardBiden-tvOS
 
-  target 'BuzzboardTrump-tvOSTests' do
+  target 'BuzzboardBiden-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

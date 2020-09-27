@@ -1,42 +1,41 @@
 {
   "project_info": {
-    "project_number": "619391703587",
-    "firebase_url": "https://buzzboard-trump.firebaseio.com",
-    "project_id": "buzzboard-trump",
-    "storage_bucket": "buzzboard-trump.appspot.com"
+    "project_number": "402734595694",
+    "firebase_url": "https://buzzboard-biden.firebaseio.com",
+    "project_id": "buzzboard-biden",
+    "storage_bucket": "buzzboard-biden.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:619391703587:android:ab2cabb265dd9b8952af96",
+        "mobilesdk_app_id": "1:402734595694:android:d9facdb2c9c9f49a69b07f",
         "android_client_info": {
-          "package_name": "app.buzzboard.trump"
+          "package_name": "app.buzzboard.biden"
         }
       },
       "oauth_client": [
         {
-          "client_id": "619391703587-btub029u1kpvkkr799tdcla2nh47emo9.apps.googleusercontent.com",
+          "client_id": "402734595694-53m0epkr2jlppdj0t6f4tv7ooqr8d0bq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDgPELISiYhgHWMYiuXEyJYkanrOvc3HlE"
+          "current_key": "AIzaSyD2ZezU1h7Ldz46wqSa44PbiFuFSl2OGBw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "619391703587-btub029u1kpvkkr799tdcla2nh47emo9.apps.googleusercontent.com",
+              "client_id": "402734595694-53m0epkr2jlppdj0t6f4tv7ooqr8d0bq.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "619391703587-3jkt9ujkb6rfmj26ikgas0dtohroupi4.apps.googleusercontent.com",
+              "client_id": "402734595694-nu1mm7nbk1je37b0rfqk5q0pa2s483nm.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "app.buzzboard.trump",
-                "app_store_id": "1522414144"
+                "bundle_id": "app.buzzboard.biden"
               }
             }
           ]

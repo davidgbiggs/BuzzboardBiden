@@ -130,7 +130,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "app.buzzboard.trump"
+        applicationId "app.buzzboard.biden"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

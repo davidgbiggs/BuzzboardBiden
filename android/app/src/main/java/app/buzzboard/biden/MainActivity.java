@@ -1,4 +1,4 @@
-package app.buzzboard.trump;
+package app.buzzboard.biden;
 
 import org.devio.rn.splashscreen.SplashScreen;
 import android.os.Bundle;
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "BuzzboardTrump";
+    return "BuzzboardBiden";
   }
 }
