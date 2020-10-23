@@ -25,109 +25,126 @@ function setSound(soundString) {
   // }
 }
 
-let fn1 = setSound('fake_news.mp3');
-let fn2 = setSound('billions.mp3');
-let fn3 = setSound('china.mp3');
-let fn4 = setSound('crookedhillary.mp3');
+// singular ios: ca-app-pub-5686363028654312/8412091929
+// singular android: ca-app-pub-5686363028654312/3792521763
+// interstitial ios: ca-app-pub-5686363028654312/8518412448
+// interstitial android: ca-app-pub-5686363028654312/6418685105
 
-let fn5 = setSound('wrong.mp3');
-let fn6 = setSound('dating_her.mp3');
-let fn7 = setSound('respectswomen.mp3');
-let fn8 = setSound('thirdperson.mp3');
+let fn1 = setSound('bangemgetemrusty.mp3');
+let fn2 = setSound('basement.mp3');
+let fn3 = setSound('bigstick.mp3');
+let fn4 = setSound('closetherazor.mp3');
 
-let fn9 = setSound('collusiondelusionisover.mp3');
-let fn10 = setSound('couldvetoldyouthat.mp3');
-let fn11 = setSound('giveyouamillion.mp3');
-let fn12 = setSound('grabembythe.mp3');
-let fn13 = setSound('littlemarco.mp3');
-let fn14 = setSound('lyinted.mp3');
-let fn15 = setSound('makeamericagreatagain.mp3');
-let fn16 = setSound('metoogeneration.mp3');
+let fn5 = setSound('comehereman.mp3');
+let fn6 = setSound('comeonman.mp3');
+let fn7 = setSound('confusing.mp3');
+let fn8 = setSound('cornpop.mp3');
 
-let fn17 = setSound('pocahontas.mp3');
-let fn18 = setSound('sleepyjoebiden.mp3');
-let fn19 = setSound('thedeepstate.mp3');
-let fn20 = setSound('thefakenewsmedia.mp3');
-let fn21 = setSound('twoounces.mp3');
-let fn22 = setSound('wehavesomebreakingnews.mp3');
-let fn23 = setSound('youdbeinjail.mp3');
-let fn24 = setSound('therussiahoaxisdead.mp3');
+let fn9 = setSound('dontcomeback.mp3');
+let fn10 = setSound('goodevening.mp3');
+let fn11 = setSound('hairylegs.mp3');
+let fn12 = setSound('iapologize.mp3');
+let fn13 = setSound('imreallysorry.mp3');
+let fn14 = setSound('iwassmart.mp3');
+let fn15 = setSound('kiddingme.mp3');
+let fn16 = setSound('lap.mp3');
+
+let fn17 = setSound('lookfat.mp3');
+let fn18 = setSound('lookingforward.mp3');
+let fn19 = setSound('notgoingnuts.mp3');
+let fn20 = setSound('ponysoldier.mp3');
+let fn21 = setSound('poorkids.mp3');
+let fn22 = setSound('pushups.mp3');
+let fn23 = setSound('rubmyleg.mp3');
+let fn24 = setSound('selfevident.mp3');
+let fn25 = setSound('totallylegitimate.mp3');
+let fn26 = setSound('truthoverfacts.mp3');
+let fn27 = setSound('willyoushutup.mp3');
+let fn28 = setSound('wordsstraight.mp3');
+let fn29 = setSound('wrapthischain.mp3');
+let fn30 = setSound('youknowthething.mp3');
 
 const tracks1 = [
   {
     id: '0',
     sound: fn1,
-    title: 'You Are Fake News',
+    title: 'Bang em on the curb',
   },
   {
     id: '1',
     sound: fn2,
-    title: 'Billions and Billions',
+    title: 'Come to the basement',
   },
-  {id: '2', sound: fn3, title: 'China'},
+  {id: '2', sound: fn3, title: 'A big stick'},
   {
     id: '3',
     sound: fn4,
-    title: 'Crooked Hillary',
+    title: 'Okaaayy, close the straight razor',
   },
-  {id: '5', sound: fn5, title: 'Wrong'},
-  {id: '6', sound: fn6, title: "If Ivanka Weren't My Daughter"},
+  {id: '5', sound: fn5, title: 'Come here, man'},
+  {id: '6', sound: fn6, title: 'Come on, man'},
 ];
 
 const tracks2 = [
-  {id: '7', sound: fn7, title: 'The Most Respect'},
-  {id: '8', sound: fn8, title: 'Donald Trump'},
-  {id: '10', sound: fn9, title: 'Collusion Delusion'},
-  {id: '11', sound: fn10, title: 'Coulda told you that'},
-  {id: '12', sound: fn11, title: 'I will give you a million'},
-  {id: '13', sound: fn12, title: 'Grab em by the ______'},
+  {id: '7', sound: fn7, title: 'A little bit confusing'},
+  {id: '8', sound: fn8, title: 'Corn pop was a bad dude'},
+  {id: '10', sound: fn9, title: "Don't come back"},
+  {id: '11', sound: fn10, title: 'Good evening'},
+  {id: '12', sound: fn11, title: 'I got hairy legs'},
+  {id: '13', sound: fn12, title: 'I apologize for that'},
 ];
 
 const tracks3 = [
-  {id: '14', sound: fn13, title: 'Little Marco'},
-  {id: '15', sound: fn14, title: "Lyin' Ted"},
-  {id: '16', sound: fn15, title: 'Make America Great Again'},
-  {id: '17', sound: fn16, title: 'Be Very Gentle'},
-  {id: '18', sound: fn17, title: 'Pocahontas'},
-  {id: '19', sound: fn18, title: 'Sleepy Joe Biden'},
+  {id: '14', sound: fn13, title: "I'm really sorry"},
+  {id: '15', sound: fn14, title: 'I was smart... then'},
+  {id: '16', sound: fn15, title: "You're kiddin' me"},
+  {id: '17', sound: fn16, title: "Kids jumpin' on my lap"},
+  {id: '18', sound: fn17, title: 'Look, fat, look...'},
+  {id: '19', sound: fn18, title: "I'm lookin' forward to this"},
 ];
 
 const tracks4 = [
-  {id: '20', sound: fn19, title: 'The Deep State'},
-  {id: '21', sound: fn20, title: 'The Fake News Media'},
-  {id: '22', sound: fn21, title: 'It Only Weighs... TWO ounces'},
-  {id: '23', sound: fn22, title: 'We Have Some Breaking News'},
-  {id: '24', sound: fn23, title: "Because You'd Be In Jail"},
-  {id: '25', sound: fn24, title: 'The Russia Hoax Is Finally Dead'},
+  {id: '20', sound: fn19, title: "I'm not going nuts"},
+  {id: '21', sound: fn20, title: 'Dog-faced pony soldier'},
+  {id: '22', sound: fn21, title: 'Poor vs. white'},
+  {id: '23', sound: fn22, title: "Let's do pushups"},
+  {id: '24', sound: fn23, title: 'Rub my leg down'},
+  {id: '25', sound: fn24, title: 'Self evident'},
 ];
 
-let fn25 = setSound('thesearesickpeople.mp3');
-let fn26 = setSound('theyrebeautifultheyrebig.mp3');
-let fn27 = setSound('wallgottaller.mp3');
-let fn28 = setSound('majorlosers.mp3');
-
 const tracks5 = [
-  {id: '26', sound: fn25, title: 'These Are Sick People'},
-  {id: '27', sound: fn26, title: "They're Beautiful, They're Big"},
-  {id: '28', sound: fn27, title: 'The Wall Just Got 10 Feet Taller'},
-  {id: '29', sound: fn28, title: 'Major Losers'},
+  {id: '26', sound: fn25, title: 'Totally legitimate'},
+  {id: '27', sound: fn26, title: 'Truth over facts'},
+  {id: '28', sound: fn27, title: 'Will you shut up, man'},
+  {id: '29', sound: fn28, title: 'Get your words straight, jack'},
+  {id: '30', sound: fn29, title: 'Wrap this chain around your head'},
+  {id: '31', sound: fn30, title: 'You know the thing'},
 ];
 
 const banners =
   Platform.OS === 'ios'
-    ? [
-        'ca-app-pub-5686363028654312/4537304403',
-        'ca-app-pub-5686363028654312/9422977183',
-      ]
-    : [
-        'ca-app-pub-5686363028654312/4903285854',
-        'ca-app-pub-5686363028654312/8588230053',
-      ];
+    ? ['', 'ca-app-pub-5686363028654312/9422977183']
+    : ['', 'ca-app-pub-5686363028654312/8588230053'];
 
 export const mock = {
-  boardTitle: 'Trump',
+  boardTitle: 'Biden',
   pictureLocation:
-    'https://live.staticflickr.com/4423/36550049236_7118b32f83_b.jpg',
+    'https://spectator.us/wp-content/uploads/2020/08/GettyImages-1227830570.jpg',
+  adKeywords: [
+    'senate judiciary committee members',
+    'sylvia allen',
+    'flavier',
+    'sara gideon',
+    'senators up for reelection in 2020',
+  ],
+  bannerAdID:
+    Platform.OS === 'ios'
+      ? 'ca-app-pub-5686363028654312/8412091929'
+      : 'ca-app-pub-5686363028654312/3792521763',
+  unlockSoundAdID:
+    Platform.OS === 'ios'
+      ? 'ca-app-pub-5686363028654312/8518412448'
+      : 'ca-app-pub-5686363028654312/6418685105',
   soundCategories: [
     {
       id: '0',
@@ -174,6 +191,24 @@ export const mock = {
           ? 'ca-app-pub-5686363028654312/4537304403'
           : 'ca-app-pub-5686363028654312/9901311728',
     },
+    // {
+    //   id: '5',
+    //   title: 'Fight',
+    //   sounds: tracks5,
+    //   adID:
+    //     Platform.OS === 'ios'
+    //       ? 'ca-app-pub-5686363028654312/4537304403'
+    //       : 'ca-app-pub-5686363028654312/9901311728',
+    // },
+    // {
+    //   id: '6',
+    //   title: 'Classics',
+    //   sounds: tracks5,
+    //   adID:
+    //     Platform.OS === 'ios'
+    //       ? 'ca-app-pub-5686363028654312/4903285854'
+    //       : 'ca-app-pub-5686363028654312/9901311728',
+    // },
     // {
     //   id: '0',
     //   title: 'Hello',

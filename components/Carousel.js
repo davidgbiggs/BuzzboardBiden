@@ -47,7 +47,7 @@ export default function Carousel(props) {
     );
   };
 
-  function handleScroll(event: Object) {
+  function handleScroll(event) {
     setScrollPosition(event.nativeEvent.contentOffset.x);
   }
 
@@ -73,19 +73,27 @@ export default function Carousel(props) {
                     contentContainerStyle={localStyles.boardList}
                     data={item.sounds}
                     renderItem={renderItem}
+                    scrollEnabled={false}
+                    showsVerticalScrollIndicator={false}
                     keyExtractor={(keyItem) => keyItem.id.toString()}
                   />
-                  <AdContainer
-                    testing={true}
+                  {/* <AdContainer
+                    testing={false}
                     adID={item.adID}
                     style={localStyles.bannerAd}
-                  />
+                  /> */}
                 </View>
               </>
             );
           }}
         />
       </View>
+      <AdContainer
+        testing={false}
+        adID={props.adID}
+        style={localStyles.bannerAd}
+        adKeywords={props.adKeywords}
+      />
       <CategoryRow
         carouselRef={_carousel}
         soundList={props.soundList}
@@ -97,11 +105,12 @@ export default function Carousel(props) {
 
 const localStyles = EStyleSheet.create({
   scrollContainer: {
-    height: '$screenHeight * 0.56514285',
+    height: '$screenHeight * 0.46514285',
     width: '$screenWidth',
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: '$vh * 1',
   },
   carouselInner: {
     flexWrap: 'nowrap',

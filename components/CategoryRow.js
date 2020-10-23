@@ -62,9 +62,9 @@ export default function CategoryRow(props) {
 const localStyles = EStyleSheet.create({
   categoryRow: {
     height: '$screenHeight * 0.0470936',
-    marginBottom: '$screenHeight * 0.01169951',
+    // marginBottom: '$vh * -1',
     width: '$screenWidth * 0.80266667',
     flexDirection: 'row',
   },
-  viewContainer: {height: '$screenHeight * 0.0470936'},
+  viewContainer: {height: '$screenHeight * 0.0470936', marginTop: '$vh * 1'},
 });

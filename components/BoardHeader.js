@@ -6,7 +6,7 @@ import BasicText from './BasicText';
 export default function BoardHeader(props) {
   return (
     <View style={localStyles.pictureRow}>
-      <Image source={require('./trump.jpg')} style={localStyles.boardPerson} />
+      <Image source={require('./biden.jpg')} style={localStyles.boardPerson} />
       <BasicText style={localStyles.boardTitle}>{props.boardTitle}</BasicText>
     </View>
   );

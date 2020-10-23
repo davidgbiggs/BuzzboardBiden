@@ -6,6 +6,7 @@ import AppHeader from '../components/AppHeader.js';
 import Board from '../components/Board.js';
 import Player from '../components/Player.js';
 import {mock} from '../mock.js';
+import AdContainer from '../components/AdContainer.js';
 
 export default function BoardScreen({navigation}) {
   var Sound = require('react-native-sound');
@@ -81,6 +82,9 @@ export default function BoardScreen({navigation}) {
           currentSound={currentSound}
           play={play}
           // pause={pause}
+          // adID={mock.bannerAdId}
+          // keywords={mock.adKeywords}
+          // testing={false}
           isPlaying={isPlaying}
         />
       </View>

@@ -1,23 +1,26 @@
 import React from 'react';
-import {View} from 'react-native';
+import {ScrollView} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import StackScreenHeader from '../components/StackScreenHeader';
-import BasicText from '../components/BasicText';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import BuzzboardLink from '../components/BuzzboardLink';
 
 export default function MarketScreen({navigation}) {
   return (
     <SafeAreaView style={localStyles.safeArea}>
       <StackScreenHeader navigation={navigation} title="Extras" />
-      <View style={localStyles.constructionView}>
-        <BasicText style={localStyles.constructionText}>Coming Soon!</BasicText>
-      </View>
+      <ScrollView style={localStyles.scrollView}>
+        <BuzzboardLink title="Trump Buzzboard" />
+      </ScrollView>
     </SafeAreaView>
   );
 }
 
 const localStyles = EStyleSheet.create({
   safeArea: {},
+  scrollView: {
+    height: '$vh * 100',
+  },
   constructionView: {
     height: '60%',
     justifyContent: 'center',

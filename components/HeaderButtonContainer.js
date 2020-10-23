@@ -38,7 +38,7 @@ const localStyles = EStyleSheet.create({
     borderTopLeftRadius: '0.5rem',
     borderBottomLeftRadius: '0.5rem',
     borderColor: '$secondaryColor',
-    borderWidth: '0.27rem',
+    borderWidth: '0.15rem',
     borderRightWidth: 0,
   },
   icon: {borderColor: 'black', paddingHorizontal: '$screenWidth * 0.008'},
