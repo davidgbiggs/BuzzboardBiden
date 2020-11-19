@@ -13,6 +13,7 @@
     "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/masked-view": "*",
     "@react-native-firebase/admob": "^7.6.9",
     "@react-native-firebase/app": "^8.4.6",

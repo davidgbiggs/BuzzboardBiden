@@ -18,35 +18,43 @@ export default function BoardScreen({navigation}) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   function play(track) {
-    if (currentSound.id === track.id) {
-      if (isPlaying) {
-        setIsPlaying(false);
-        currentSound.sound.stop();
+    try {
+      if (currentSound.id === track.id) {
+        if (isPlaying) {
+          setIsPlaying(false);
+          // currentSound.sound.stop();
+          currentSound.sound.pause();
+          currentSound.sound.setCurrentTime(0);
+        } else {
+          setIsPlaying(true);
+          // setDuration(track.sound.getDuration());
+          currentSound.sound.play(() => {
+            setIsPlaying(false);
+            // setPlaySeconds(0);
+          });
+        }
       } else {
-        setIsPlaying(true);
-        // setDuration(track.sound.getDuration());
-        currentSound.sound.play(() => {
-          setIsPlaying(false);
-          // setPlaySeconds(0);
-        });
+        // currentSound.sound.stop();
+        currentSound.sound.pause();
+        currentSound.sound.setCurrentTime(0);
+        setCurrentSound(track);
+        if (isPlaying) {
+          // setDuration(track.sound.getDuration());
+          track.sound.play(() => {
+            setIsPlaying(false);
+            // setPlaySeconds(0);
+          });
+        } else {
+          setIsPlaying(true);
+          // setDuration(track.sound.getDuration());
+          track.sound.play(() => {
+            setIsPlaying(false);
+            // setPlaySeconds(0);
+          });
+        }
       }
-    } else {
-      currentSound.sound.stop();
-      setCurrentSound(track);
-      if (isPlaying) {
-        // setDuration(track.sound.getDuration());
-        track.sound.play(() => {
-          setIsPlaying(false);
-          // setPlaySeconds(0);
-        });
-      } else {
-        setIsPlaying(true);
-        // setDuration(track.sound.getDuration());
-        track.sound.play(() => {
-          setIsPlaying(false);
-          // setPlaySeconds(0);
-        });
-      }
+    } catch (error) {
+      console.log(error);
     }
   }
 

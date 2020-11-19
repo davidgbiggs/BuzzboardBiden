@@ -24,7 +24,7 @@ export default function BuzzboardLink(props) {
           'Trump Soundboard (Buzzboard)',
           '1522414144',
           'us',
-          'app.buzzboard.trump',
+          'app.buzzboard.biden',
         )
       }>
       <View style={localStyles.view}>

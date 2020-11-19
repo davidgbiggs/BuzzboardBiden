@@ -1,32 +1,82 @@
-import React, {useState, useRef} from 'react';
-import {View, ScrollView, FlatList, Animated} from 'react-native';
+import React, {useState, useRef, useEffect} from 'react';
+import {
+  View,
+  ScrollView,
+  FlatList,
+  Animated,
+  Platform,
+  StatusBar,
+} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import AdContainer from './AdContainer';
 import CategoryRow from './CategoryRow';
 import SoundList from './SoundList';
 import ListItem from './ListItem';
+import {
+  RewardedAd,
+  RewardedAdEventType,
+  TestIds,
+} from '@react-native-firebase/admob';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Carousel(props) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const _carousel = useRef(null);
 
-  // const renderItem = ({item}) => {
-  //   return (
-  //     <>
-  //       <ListItem
-  //         title={item.title}
-  //         id={item.id}
-  //         artist={item.artist}
-  //         url={item.url}
-  //         play={props.play}
-  //         pause={props.pause}
-  //         setTrack={props.setTrack}
-  //         currentTrack={props.currentTrack}
-  //         playerState={props.playerState}
-  //       />
-  //     </>
-  //   );
-  // };
+  // const rewarded = RewardedAd.createForAdRequest(adUnitId, {
+  //   requestNonPersonalizedAdsOnly: true,
+  //   keywords: ['fashion', 'clothing'],
+  // });
+
+  const adID = __DEV__ ? TestIds.REWARDED : props.rewardedAdID;
+
+  const showRewarded = async (title, setHoursRemaining, setLoading) => {
+    const rewarded = RewardedAd.createForAdRequest(adID, {
+      requestNonPersonalizedAdsOnly: false,
+    });
+    const unsubscribe = rewarded.onAdEvent((type, error, reward) => {
+      if (type === 'opened') {
+        console.log('opened');
+        StatusBar.setHidden(true);
+      }
+      if (type === 'closed') {
+        console.log('closed');
+        StatusBar.setHidden(false);
+        setLoading(false);
+      }
+      if (type === RewardedAdEventType.LOADED) {
+        console.log('loaded');
+        rewarded.show();
+        loaded = true;
+      }
+      if (type === RewardedAdEventType.EARNED_REWARD) {
+        StatusBar.setHidden(false);
+        console.log('earned reward');
+        gotReward = true;
+        AsyncStorage.setItem(title, JSON.stringify(new Date()));
+        console.log(
+          `set async storage for ${title} to:`,
+          JSON.stringify(new Date()),
+        );
+        setHoursRemaining(24);
+        setLoading(false);
+        unsubscribe();
+        return gotReward;
+      }
+      if (error) {
+        console.warn('error: ', error);
+        setLoading(false);
+        unsubscribe();
+        return gotReward;
+      }
+    });
+    let loaded = false;
+    let gotReward = false;
+    rewarded.load();
+    while (!loaded) {
+      await new Promise((resolve, reject) => setTimeout(resolve, 1000));
+    }
+  };
 
   const renderItem = ({item}) => {
     return (
@@ -42,6 +92,8 @@ export default function Carousel(props) {
           setTrack={props.setTrack}
           currentSound={props.currentSound}
           isPlaying={props.isPlaying}
+          premium={item.premium}
+          showRewarded={showRewarded}
         />
       </>
     );
@@ -90,7 +142,7 @@ export default function Carousel(props) {
       </View>
       <AdContainer
         testing={false}
-        adID={props.adID}
+        adID={__DEV__ ? TestIds.BANNER : props.bannerAdID}
         style={localStyles.bannerAd}
         adKeywords={props.adKeywords}
       />

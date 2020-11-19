@@ -17,6 +17,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* BuzzboardBidenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BuzzboardBidenTests.m */; };
+		631314A0254D023400D45E36 /* joe_for_senate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6313149E254D023400D45E36 /* joe_for_senate.mp3 */; };
+		631314A1254D023400D45E36 /* you_aint_black.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6313149F254D023400D45E36 /* you_aint_black.mp3 */; };
+		6335F1A5254D209A0043CA5E /* back_in_chains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6335F1A4254D209A0043CA5E /* back_in_chains.mp3 */; };
 		635399F7250DC54B000D3EB3 /* node_modules in Resources */ = {isa = PBXBuildFile; fileRef = 635399F5250DC54B000D3EB3 /* node_modules */; };
 		635399F8250DC54B000D3EB3 /* components in Resources */ = {isa = PBXBuildFile; fileRef = 635399F6250DC54B000D3EB3 /* components */; };
 		63539A43250DC6B3000D3EB3 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 635399F9250DC58C000D3EB3 /* Montserrat-Black.ttf */; };
@@ -112,6 +115,9 @@
 		357E4C6BB4E1194E07E14384 /* libPods-BuzzboardBiden-BuzzboardBidenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuzzboardBiden-BuzzboardBidenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D9F862CF3C0C2ABE0C3F23 /* Pods-BuzzboardBiden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzboardBiden.debug.xcconfig"; path = "Target Support Files/Pods-BuzzboardBiden/Pods-BuzzboardBiden.debug.xcconfig"; sourceTree = "<group>"; };
 		4AD0C0F1BAF67F779A99A923 /* Pods-BuzzboardBiden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzboardBiden.release.xcconfig"; path = "Target Support Files/Pods-BuzzboardBiden/Pods-BuzzboardBiden.release.xcconfig"; sourceTree = "<group>"; };
+		6313149E254D023400D45E36 /* joe_for_senate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joe_for_senate.mp3; sourceTree = "<group>"; };
+		6313149F254D023400D45E36 /* you_aint_black.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = you_aint_black.mp3; sourceTree = "<group>"; };
+		6335F1A4254D209A0043CA5E /* back_in_chains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back_in_chains.mp3; sourceTree = "<group>"; };
 		635399F5250DC54B000D3EB3 /* node_modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = node_modules; sourceTree = "<group>"; };
 		635399F6250DC54B000D3EB3 /* components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = components; sourceTree = "<group>"; };
 		635399F9250DC58C000D3EB3 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
@@ -307,6 +313,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6335F1A4254D209A0043CA5E /* back_in_chains.mp3 */,
+				6313149E254D023400D45E36 /* joe_for_senate.mp3 */,
+				6313149F254D023400D45E36 /* you_aint_black.mp3 */,
 				63B606342529436800BFCA60 /* bangemgetemrusty.mp3 */,
 				63B6061B2529436700BFCA60 /* basement.mp3 */,
 				63B606212529436800BFCA60 /* bigstick.mp3 */,
@@ -525,6 +534,7 @@
 				63B606432529436900BFCA60 /* confusing.mp3 in Resources */,
 				63B606442529436900BFCA60 /* kiddingme.mp3 in Resources */,
 				63B606452529436900BFCA60 /* truthoverfacts.mp3 in Resources */,
+				631314A1254D023400D45E36 /* you_aint_black.mp3 in Resources */,
 				63B606462529436900BFCA60 /* pushups.mp3 in Resources */,
 				63B606472529436900BFCA60 /* lookingforward.mp3 in Resources */,
 				63B606482529436900BFCA60 /* poorkids.mp3 in Resources */,
@@ -535,6 +545,7 @@
 				63B6064D2529436900BFCA60 /* iapologize.mp3 in Resources */,
 				63B6064E2529436900BFCA60 /* imreallysorry.mp3 in Resources */,
 				63B6064F2529436900BFCA60 /* closetherazor.mp3 in Resources */,
+				631314A0254D023400D45E36 /* joe_for_senate.mp3 in Resources */,
 				63B606502529436900BFCA60 /* dontcomeback.mp3 in Resources */,
 				63B606512529436900BFCA60 /* ponysoldier.mp3 in Resources */,
 				63B606522529436900BFCA60 /* bangemgetemrusty.mp3 in Resources */,
@@ -544,6 +555,7 @@
 				63539A46250DC6B3000D3EB3 /* Montserrat-BoldItalic.ttf in Resources */,
 				63539A47250DC6B3000D3EB3 /* Montserrat-ExtraBold.ttf in Resources */,
 				63539A48250DC6B3000D3EB3 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				6335F1A5254D209A0043CA5E /* back_in_chains.mp3 in Resources */,
 				63539A49250DC6B3000D3EB3 /* Montserrat-ExtraLight.ttf in Resources */,
 				63539A4A250DC6B3000D3EB3 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				63539A4B250DC6B3000D3EB3 /* Montserrat-Italic.ttf in Resources */,
@@ -968,7 +980,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = LBJ5VS345R;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
@@ -979,7 +991,7 @@
 				);
 				INFOPLIST_FILE = BuzzboardBiden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2.9.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1000,13 +1012,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = LBJ5VS345R;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = BuzzboardBiden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2.9.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

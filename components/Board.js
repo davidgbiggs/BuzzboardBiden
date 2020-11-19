@@ -4,9 +4,19 @@ import Carousel from './Carousel.js';
 // import CategoryRow from './CategoryRow.js';
 import FeedbackRow from './FeedbackRow.js';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import {View} from 'react-native';
+import {View, Platform} from 'react-native';
 
 export default function Board(props) {
+  let bannerAdID;
+  let rewardedAdID;
+  if (Platform.OS === 'ios') {
+    bannerAdID = props.data.bannerAdID.ios;
+    rewardedAdID = props.data.rewardedAdID.ios;
+  } else {
+    bannerAdID = props.data.bannerAdID.android;
+    rewardedAdID = props.data.rewardedAdID.android;
+  }
+
   return (
     <>
       <View style={localStyles.boardBackground}>
@@ -17,10 +27,11 @@ export default function Board(props) {
         <Carousel
           currentSound={props.currentSound}
           play={props.play}
+          rewardedAdID={rewardedAdID}
           // pause={props.pause}
           // setTrack={props.setTrack}
           adKeywords={props.data.adKeywords}
-          adID={props.data.bannerAdID}
+          bannerAdID={bannerAdID}
           isPlaying={props.isPlaying}
           soundList={props.soundList}
         />

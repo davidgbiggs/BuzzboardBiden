@@ -1,5 +1,5 @@
 
-package app.buzzboard.trump; // Change this to your package name.
+package app.buzzboard.biden; // Change this to your package name.
 
 import android.content.Intent;
 import app.buzzboard.biden.MainActivity;

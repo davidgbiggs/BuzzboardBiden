@@ -63,6 +63,9 @@ let fn27 = setSound('willyoushutup.mp3');
 let fn28 = setSound('wordsstraight.mp3');
 let fn29 = setSound('wrapthischain.mp3');
 let fn30 = setSound('youknowthething.mp3');
+let fn31 = setSound('joe_for_senate.mp3');
+let fn32 = setSound('you_aint_black.mp3');
+let fn33 = setSound('back_in_chains.mp3');
 
 const tracks1 = [
   {
@@ -82,12 +85,12 @@ const tracks1 = [
     title: 'Okaaayy, close the straight razor',
   },
   {id: '5', sound: fn5, title: 'Come here, man'},
-  {id: '6', sound: fn6, title: 'Come on, man'},
+  {id: '6', sound: fn6, title: 'Come on, man', premium: true},
 ];
 
 const tracks2 = [
   {id: '7', sound: fn7, title: 'A little bit confusing'},
-  {id: '8', sound: fn8, title: 'Corn pop was a bad dude'},
+  {id: '8', sound: fn8, title: 'Corn pop was a bad dude', premium: true},
   {id: '10', sound: fn9, title: "Don't come back"},
   {id: '11', sound: fn10, title: 'Good evening'},
   {id: '12', sound: fn11, title: 'I got hairy legs'},
@@ -98,14 +101,14 @@ const tracks3 = [
   {id: '14', sound: fn13, title: "I'm really sorry"},
   {id: '15', sound: fn14, title: 'I was smart... then'},
   {id: '16', sound: fn15, title: "You're kiddin' me"},
-  {id: '17', sound: fn16, title: "Kids jumpin' on my lap"},
+  {id: '17', sound: fn16, title: "Kids jumpin' on my lap", premium: true},
   {id: '18', sound: fn17, title: 'Look, fat, look...'},
   {id: '19', sound: fn18, title: "I'm lookin' forward to this"},
 ];
 
 const tracks4 = [
   {id: '20', sound: fn19, title: "I'm not going nuts"},
-  {id: '21', sound: fn20, title: 'Dog-faced pony soldier'},
+  {id: '21', sound: fn20, title: 'Dog-faced pony soldier', premium: true},
   {id: '22', sound: fn21, title: 'Poor vs. white'},
   {id: '23', sound: fn22, title: "Let's do pushups"},
   {id: '24', sound: fn23, title: 'Rub my leg down'},
@@ -118,7 +121,13 @@ const tracks5 = [
   {id: '28', sound: fn27, title: 'Will you shut up, man'},
   {id: '29', sound: fn28, title: 'Get your words straight, jack'},
   {id: '30', sound: fn29, title: 'Wrap this chain around your head'},
-  {id: '31', sound: fn30, title: 'You know the thing'},
+  {id: '31', sound: fn30, title: 'You know the thing', premium: true},
+];
+
+const tracks6 = [
+  {id: '32', sound: fn31, title: 'Accidental Senate'},
+  {id: '33', sound: fn32, title: "You ain't black", premium: true},
+  {id: '34', sound: fn33, title: "Put y'all back in chains"},
 ];
 
 const banners =
@@ -137,14 +146,18 @@ export const mock = {
     'sara gideon',
     'senators up for reelection in 2020',
   ],
-  bannerAdID:
-    Platform.OS === 'ios'
-      ? 'ca-app-pub-5686363028654312/8412091929'
-      : 'ca-app-pub-5686363028654312/3792521763',
-  unlockSoundAdID:
-    Platform.OS === 'ios'
-      ? 'ca-app-pub-5686363028654312/8518412448'
-      : 'ca-app-pub-5686363028654312/6418685105',
+  rewardedAdID: {
+    ios: 'ca-app-pub-5686363028654312/3242758782',
+    android: 'ca-app-pub-5686363028654312/2584105627',
+  },
+  bannerAdID: {
+    ios: 'ca-app-pub-5686363028654312/8412091929',
+    android: 'ca-app-pub-5686363028654312/3792521763',
+  },
+  // unlockSoundAdID:
+  //   Platform.OS === 'ios'
+  //     ? 'ca-app-pub-5686363028654312/8518412448'
+  //     : 'ca-app-pub-5686363028654312/6418685105',
   soundCategories: [
     {
       id: '0',
@@ -186,6 +199,15 @@ export const mock = {
       id: '4',
       title: 'Page 5',
       sounds: tracks5,
+      adID:
+        Platform.OS === 'ios'
+          ? 'ca-app-pub-5686363028654312/4537304403'
+          : 'ca-app-pub-5686363028654312/9901311728',
+    },
+    {
+      id: '5',
+      title: 'Page 6',
+      sounds: tracks6,
       adID:
         Platform.OS === 'ios'
           ? 'ca-app-pub-5686363028654312/4537304403'
