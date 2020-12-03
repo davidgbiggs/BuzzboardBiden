@@ -40,6 +40,17 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>skadnetwork</key>
+	<array>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>v9wttpbfk9.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>n38lu8286q.skadnetwork</string>
+    </dict>
+</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string />
 	<key>UIAppFonts</key>
