@@ -114,7 +114,7 @@ function ListItem(props) {
 
   function ListItemControls() {
     if (loading) {
-      return <ActivityIndicator />;
+      return <ActivityIndicator color={EStyleSheet.value('$oppositeColor')} />;
     } else if (!props.premium) {
       return (
         <FontAwesome5Icon
@@ -134,7 +134,11 @@ function ListItem(props) {
       return (
         <>
           <TouchableOpacity onPress={hoursRemainingAlert} activeOpacity={0.6}>
-            <Text style={localStyles.hoursRemaining}>{hoursRemaining}</Text>
+            <View style={localStyles.hoursRemainingView}>
+              <Text style={localStyles.hoursRemainingText}>
+                {hoursRemaining}
+              </Text>
+            </View>
           </TouchableOpacity>
           <FontAwesome5Icon
             name={
@@ -191,15 +195,17 @@ const localStyles = EStyleSheet.create({
 
     // elevation: 3,
   },
-  hoursRemaining: {
+  hoursRemainingView: {
     borderColor: 'black',
     borderWidth: '.1rem',
     paddingHorizontal: '.15rem',
     borderRadius: '.3rem',
+    marginRight: '$vw * 2',
+  },
+  hoursRemainingText: {
     color: 'black',
     // backgroundColor: 'black',
     fontWeight: 'bold',
-    marginRight: '$vw * 2',
     fontSize: '0.7rem',
   },
   listItemText: {

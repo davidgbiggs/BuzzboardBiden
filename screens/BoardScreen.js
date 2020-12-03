@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {View, StatusBar} from 'react-native';
+import {View, StatusBar, Platform} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import AppHeader from '../components/AppHeader.js';
@@ -72,7 +72,11 @@ export default function BoardScreen({navigation}) {
 
   return (
     <SafeAreaView edges={['top']}>
-      <StatusBar barStyle="dark-content" />
+      {Platform.OS === 'ios' ? (
+        <StatusBar barStyle="dark-content" />
+      ) : (
+        <StatusBar />
+      )}
       <View style={localStyles.outerView}>
         <AppHeader toMarket={toMarketScreen} />
         <Board

@@ -140,11 +140,9 @@ export const mock = {
   pictureLocation:
     'https://spectator.us/wp-content/uploads/2020/08/GettyImages-1227830570.jpg',
   adKeywords: [
-    'senate judiciary committee members',
-    'sylvia allen',
-    'flavier',
-    'sara gideon',
-    'senators up for reelection in 2020',
+    'government of the people by the people for the people',
+    'poly sci',
+    'civil service system',
   ],
   rewardedAdID: {
     ios: 'ca-app-pub-5686363028654312/3242758782',
