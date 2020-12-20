@@ -6,7 +6,16 @@ platform :ios, '10.0'
 target 'BuzzboardBiden' do
   config = use_native_modules!
   use_react_native!(:path => config["reactNativePath"])
-  pod 'GoogleMobileAdsMediationFacebook'
+  # pod 'Google-Mobile-Ads-SDK'
+  # pod 'GoogleMobileAdsMediationFacebook'
+  # pod 'GoogleMobileAdsMediationTestSuite', :configurations => ['Debug']
+  # pod 'GoogleMobileAdsMediationTestSuite'
+  # pod 'GoogleMobileAdsMediationMoPub'
+  pod 'GoogleMobileAdsMediationChartboost'
+  # pod 'GoogleMobileAdsMediationAdColony'
+  pod 'GoogleMobileAdsMediationAppLovin'
+  pod 'GoogleMobileAdsMediationUnity'
+  pod 'GoogleMobileAdsMediationVungle'
 
   target 'BuzzboardBidenTests' do
     inherit! :complete

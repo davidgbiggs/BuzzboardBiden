@@ -4,9 +4,12 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <Firebase.h>
-#import <FBAudienceNetwork/FBAdSettings.h>
+//#import <FBAudienceNetwork/FBAdSettings.h>
+//#import <FacebookAdapter/FacebookAdapter.h>
+//@import GoogleMobileAdsMediationTestSuite;
 
 #if DEBUG
+//@import GoogleMobileAdsMediationTestSuite;
 #import <FlipperKit/FlipperClient.h>
 #import <FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h>
 #import <FlipperKitUserDefaultsPlugin/FKUserDefaultsPlugin.h>
@@ -30,7 +33,7 @@ static void InitializeFlipper(UIApplication *application) {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 // if ([FIRApp defaultApp] == nil) {
-  [FBAdSettings setAdvertiserTrackingEnabled:YES];
+//  [FBAdSettings setAdvertiserTrackingEnabled:YES];
   [FIRApp configure];
 // }
 #if DEBUG
@@ -49,6 +52,25 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+//  #if DEBUG
+//  [GoogleMobileAdsMediationTestSuite presentOnViewController:self.window.rootViewController delegate:nil];
+//      [[GADMobileAds sharedInstance] startWithCompletionHandler:^(GADInitializationStatus *_Nonnull status) {
+//
+//          NSLog(@"Ad setup completed");
+//
+//          NSLog(@"AdMob SDK version: %@", [GADRequest sdkVersion]);
+//
+//          NSDictionary<NSString *, GADAdapterStatus *>* states = [status adapterStatusesByClassName];
+//          for(id key in states) {
+//              GADAdapterStatus * adapterStatus = [states objectForKey:key];
+//              NSString* state = @"not ready";
+//              if (adapterStatus.state == GADAdapterInitializationStateReady) state = @"ready";
+//              double latency = adapterStatus.latency;
+//
+//              NSLog(@"%@ : %@ : %f sec", key, state, latency);
+//          }
+//      }];
+//  #endif
   return YES;
 }
 
